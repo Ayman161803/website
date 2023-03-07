@@ -26,6 +26,7 @@ vtctldclient CreateKeyspace <keyspace> [--force|-f] [--type KEYSPACE_TYPE] [--ba
   -f, --force                            Proceeds even if the keyspace already exists. Does not overwrite the existing keyspace record.
   -h, --help                             help for CreateKeyspace
       --served-from cli.StringMapValue   Specifies a set of db_type:keyspace pairs used to serve traffic for the keyspace.
+      --sidecar-db-name string           (Experimental) Name of the Vitess sidecar database that tablets in this keyspace will use for internal metadata. (default "_vt")
       --snapshot-timestamp string        The snapshot time for a snapshot keyspace, as a timestamp in RFC3339 format.
       --type cli.KeyspaceTypeFlag        The type of the keyspace. (default NORMAL)
 ```
